@@ -8,8 +8,13 @@ This Streamlit app takes in an engineering task title and publishes a scoped Jir
    ```
    git clone https://github.com/Nithanth/factory_ai_droid.git
    ```
+   
+2. Head to the root of the repository:
+   ```
+   cd factory_ai_droid
+   ```
 
-2. Install the required dependencies:
+4. Install the required dependencies:
    ```
    pip install -r requirements.txt
    ```
