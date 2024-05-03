@@ -21,7 +21,7 @@ def generate_task_details(client,task_title):
     Given an engineering task title, expand it into a detailed task scope including descriptions, 
     acceptance criteria/testing, sub-tasks, assumptions, dependencies, resources needed, estimated effort, 
     potential risks/challenges, points for the task, and recommended number of engineers. Ensure 
-    the scope is comprehensive and ready for implementation.
+    the scope is comprehensive and ready for implementation. Take a good estimation at the number of points for the task.
 
     Task Title: {task_title}
     Detailed Scope:
@@ -67,7 +67,7 @@ def generate_task_details(client,task_title):
     IMPORTANT: IF THE TASK_TITLE DOESN'T MAKE SENSE AS AN APPROPRIATE ENGINEERING TASK MAKE SURE 'Poorly-scoped' IS THE SCOPE QUALITY AND 
     THE DETAILED SCOPE JUST SAYS: 'ERROR - NOT APPROPRIATE TASK'! Example of bad task titles: 'Update UI', 'Task 1234', 'Create a new feature', 
     'Hello World', 'Hi how are you?'. 'qwertyuiopasdfghjklzxcvbnm' 'blah blah blah'. Make sure to catch these bad titles and errors that get 
-    passed in, don't resort to using one of th eexamples from above I want to catch the error and return the appropriate error message.
+    passed in, don't resort to using one of the examples from above I want to catch the error and return the appropriate error message.
 
     # To Generate:
     Task Title: {task_title}

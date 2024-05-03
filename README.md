@@ -28,6 +28,8 @@ This Streamlit app takes in an engineering task title and publishes a scoped Jir
    - The base URL for your Jira server instance
    - The key of the project you want to publish a ticket for (found on your Jira account)
 
+2. Insert your OpenAI API key and Jira API key in the `vault.py` file
+
 ## Usage
 
 1. Run the Streamlit app:

@@ -46,7 +46,7 @@ def main():
                 return
 
             if response_with_quality["Scope Quality"] == "Poorly-scoped":
-                st.error("The generated task details are not well-scoped. Please try again.")
+                st.error("The task title is not appropriate or the generated task details are not well-scoped. Please try again.")
                 return
 
             st.session_state.task_details_structured = response_with_quality
