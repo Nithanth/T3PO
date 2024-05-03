@@ -1,4 +1,4 @@
-# Project Task Manager Droid
+# T3PO
 
 This Streamlit app takes in an engineering task title and publishes a scoped Jira ticket to match it.
 
