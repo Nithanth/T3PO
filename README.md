@@ -6,12 +6,12 @@ This Streamlit app takes in an engineering task title and publishes a scoped Jir
 
 1. Clone the repository:
    ```
-   git clone https://github.com/Nithanth/factory_ai_droid.git
+   git clone https://github.com/Nithanth/T3PO.git
    ```
    
 2. Head to the root of the repository:
    ```
-   cd factory_ai_droid
+   cd T3PO
    ```
 
 4. Install the required dependencies:
