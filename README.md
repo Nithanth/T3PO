@@ -1,6 +1,6 @@
 # T3PO
 
-This Streamlit app takes in an engineering task title and publishes a scoped Jira ticket to match it.
+This Streamlit app takes in an engineering task's title and publishes a scoped Jira ticket to your project board.
 
 ## Installation
 
