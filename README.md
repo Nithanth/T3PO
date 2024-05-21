@@ -1,7 +1,7 @@
 # T3PO
 
 This Streamlit app takes in an engineering task's title and publishes a scoped Jira ticket to your project board.
-[Demo Video]([url](https://drive.google.com/file/d/1Jh-4lTYKOzEV4cJB_Go_9Rs21K6wcnv1/view?usp=drive_link))
+[Demo Video](https://drive.google.com/file/d/1Jh-4lTYKOzEV4cJB_Go_9Rs21K6wcnv1/view?usp=drive_link)
 
 ## Installation
 
