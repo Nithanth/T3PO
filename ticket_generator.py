@@ -4,7 +4,7 @@ from utils import *
 import json
 
 def set_up_openai_client():
-    """ Instantiates an OpenAI client with the API key stored in the vault module. """
+    """ Instantiates OpenAI client with the API key stored in the vault module. """
     return openai.OpenAI(api_key=OPENAI_API_KEY)
 
 def generate_task_details(client,task_title):

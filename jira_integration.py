@@ -30,7 +30,6 @@ def create_jira_issue(jira_client, task_details, jira_user, jira_project_key):
             'description': format_description(task_details),
             'issuetype': {'name': 'Task'},
             'assignee': {'name': jira_user},
-            'priority': {'name': 'High'},
         }
         new_issue = jira_client.create_issue(fields=issue_dict)
         return f"Successfully created Jira issue: {new_issue.key}"
@@ -50,18 +49,18 @@ def format_description(task_details):
     description = ""
     for key, value in task_details["Detailed Scope"].items():
         description += f"*{key}*: "
-        if isinstance(value, list):  # Check if the value is a list
-            if key == "Sub-Tasks":  # Specific formatting for Sub-Tasks
-                description += "\n"  # Start a new line before the list
-                for subtask in value:  # Enumerate for numbered list
+        if isinstance(value, list):  
+            if key == "Sub-Tasks":  
+                description += "\n"  
+                for subtask in value:  
                     description += f"{subtask}\n"
-            else:  # General formatting for other lists as bullet points
-                description += "\n"  # Start a new line before the list
+            else: 
+                description += "\n"  
                 for item in value:
                     description += f"- {item}\n"
         else:
-            description += f"{value}\n"  # For non-list items, just append the value
-        description += "\n"  # Add extra newline for better separation between sections
+            description += f"{value}\n" 
+        description += "\n"  
     return description
 
 if __name__ == "__main__":

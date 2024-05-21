@@ -5,7 +5,7 @@ from jira_integration import create_jira_issue, format_description, set_up_jira_
 import json
 
 def main():
-    st.title("T3PO: The Task Manager Droid You Are Looking For")
+    st.title("T3PO: Task Manager")
 
     # Sidebar for JIRA configuration
     st.sidebar.title("JIRA Configuration")
